@@ -15,7 +15,7 @@ with open(csvpath) as csvfile:
 
 #csv Header:
     csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
+    #print(f"CSV Header: {csv_header}")
 
 #Starting counter at 0
 
