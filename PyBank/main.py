@@ -45,9 +45,12 @@ with open(csvpath) as csvfile:
 
     average_profit = round(sum(profit_change) / len(profit_change),2)
 
+    #print(f"{profit_change}")
 
     max_value = max(profit_change)
     min_value = min(profit_change)
+
+    #date_cahnge = [profit[i + 1] - profit[i] for i in range(len(profit)-1)]
 
     #counter = 0
     #for row in csvreader:
@@ -56,10 +59,6 @@ with open(csvpath) as csvfile:
     #    if max_value == 
     
     
-
-
-    
-
 #Print info
 
     print("Financial Analysis")

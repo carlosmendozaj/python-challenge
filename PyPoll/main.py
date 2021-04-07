@@ -16,4 +16,12 @@ with open(csvpath) as csvfile:
     csv_header = next(csvreader)
     #print(f"CSV Header: {csv_header}")
 
-    
+    vote_count = 0
+
+    for row in csvreader:
+        vote_count = vote_count + 1
+
+        #print(f"{vote_count}")
+
+    print(f"{vote_count}")
+
