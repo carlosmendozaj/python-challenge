@@ -98,10 +98,10 @@ with open(csvpath) as csvfile:
 
     output_path = os.path.join('Analysis','PyPoll_results.txt')
     with open(output_path, 'w', newline ='') as txtfile: 
-        txtfile.writelines("-----------------------------------------------------\n")
         txtfile.writelines("Election results\n")
-        txtfile.writelines("------------------------------------------------------\n")
+        txtfile.writelines("-----------------------------------------------------\n")
         txtfile.writelines(f'Total votes: {vote_count}\n')
+        txtfile.writelines("------------------------------------------------------\n")
         txtfile.writelines(f'Khan: {k_percent}  ({khan_votes})\n')
         txtfile.writelines(f'Correy: {c_percent}  ({correy_votes})\n')
         txtfile.writelines(f'Li: {l_percent}  ({li_votes})\n')
