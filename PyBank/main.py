@@ -14,6 +14,7 @@ with open(csvpath) as csvfile:
     print(csvreader)
 
 #csv Header:
+
     csv_header = next(csvreader)
     #print(f"CSV Header: {csv_header}")
 
@@ -22,6 +23,7 @@ with open(csvpath) as csvfile:
     month_count = 0
 
     total_profit = 0
+
 #Creates a list for changes in profit
 
     profit = []
