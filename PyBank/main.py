@@ -77,9 +77,9 @@ output_path = os.path.join('Analysis','Pybank_results.txt')
 with open(output_path, 'w', newline ='') as txtfile: 
     txtfile.writelines("Financial Analysis\n")
     txtfile.writelines("---------------------------------\n")
-    txtfile.writelines("Total months: " + str(month_count) )
-    txtfile.writelines("\nTotal: $" + str (total_profit))
-    txtfile.writelines(f'\nAverage  Change: ${average_profit}\n')
+    txtfile.writelines(f"Total months:  + str(month_count)\n")
+    txtfile.writelines(f"Total: $ + str (total_profit)\n")
+    txtfile.writelines(f'Average  Change: ${average_profit}\n')
     txtfile.writelines(f'Greatest increse in profits: {max_value}\n')
     txtfile.writelines(f'Greatest decrease in profits: {min_value}\n')
     
